@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileBookViewer.LaserBooksPage"
+             xmlns:local="clr-namespace:MobileBookViewer"
+             Title="Laser Books">
+    <ContentPage.Resources>
+        <local:LaserOwnedConverter x:Key="myLaserOwnedConverter" />
+    </ContentPage.Resources>
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="10">
+            <Label
+                Text="Laser Books"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <HorizontalStackLayout>
+                <CheckBox IsChecked="{Binding NotOwned}" VerticalOptions="Center" />
+                <Label Text="Not Owned" VerticalOptions="Center"
+                       Margin="0, 0, 30, 0"/>
+                <Label Text="Sorting " VerticalOptions="Center"/>
+                <Picker SelectedItem="{Binding SortValue}" VerticalOptions="Center">
+                    <Picker.Items>
+                        <x:String>Number</x:String>
+                        <x:String>Author</x:String>
+                    </Picker.Items>
+                </Picker>
+            </HorizontalStackLayout>
+
+            <ListView ItemsSource="{Binding Books}"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <HorizontalStackLayout>
+                                    <Label Text="{Binding Number}"
+                                       FontAttributes="Bold"/>
+                                    <Label Text="{Binding Author}"
+                                           Margin="5, 0, 0, 0"
+                                       FontAttributes="Bold"/>
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding Title}"
+                                       Margin="10, 0, 0, 0"/>
+                                <Label Text="{Binding Owned, Converter={StaticResource myLaserOwnedConverter}}"
+                                       Margin="10, 0, 0, 0"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

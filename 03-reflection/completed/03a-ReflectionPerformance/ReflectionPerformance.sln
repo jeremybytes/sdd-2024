@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionPerformance.NET8", "ReflectionPerformance.NET8\ReflectionPerformance.NET8.csproj", "{D31CDE47-9E87-4B82-89EF-57A6B73CEF2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionPerformance.NET6", "ReflectionPerformance.NET6\ReflectionPerformance.NET6.csproj", "{4314D0B7-4CD9-4E35-9AD6-CDDD4B828D33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D31CDE47-9E87-4B82-89EF-57A6B73CEF2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31CDE47-9E87-4B82-89EF-57A6B73CEF2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31CDE47-9E87-4B82-89EF-57A6B73CEF2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31CDE47-9E87-4B82-89EF-57A6B73CEF2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4314D0B7-4CD9-4E35-9AD6-CDDD4B828D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4314D0B7-4CD9-4E35-9AD6-CDDD4B828D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4314D0B7-4CD9-4E35-9AD6-CDDD4B828D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4314D0B7-4CD9-4E35-9AD6-CDDD4B828D33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

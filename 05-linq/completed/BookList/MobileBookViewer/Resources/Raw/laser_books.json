@@ -1,0 +1,350 @@
+[
+  {
+    "Number": 0,
+    "Title": "Seeds of Change",
+    "Author": "Monteleone, Thomas F.",
+    "Owned": "true"
+  },
+  {
+    "Number": 1,
+    "Title": "Renegates of Time",
+    "Author": "Jones, Raymond F.",
+    "Owned": "true"
+  },
+  {
+    "Number": 2,
+    "Title": "Herds",
+    "Author": "Goldin, Stephen",
+    "Owned": "true"
+  },
+  {
+    "Number": 3,
+    "Title": "Crashnig Landing on Iduna",
+    "Author": "Tofte, Arthur",
+    "Owned": "true"
+  },
+  {
+    "Number": 4,
+    "Title": "Gates of the Universe",
+    "Author": "Coulson, Robert",
+    "Owned": "true"
+  },
+  {
+    "Number": 5,
+    "Title": "Walls Within Walls",
+    "Author": "Tofte, Arthur",
+    "Owned": "true"
+  },
+  {
+    "Number": 6,
+    "Title": "Serving in Time",
+    "Author": "Eklund, Gordon",
+    "Owned": "true"
+  },
+  {
+    "Number": 7,
+    "Title": "Seeklight",
+    "Author": "Jeter, K.W.",
+    "Owned": "true"
+  },
+  {
+    "Number": 8,
+    "Title": "Caravan",
+    "Author": "Goldin, Stephen",
+    "Owned": "true"
+  },
+  {
+    "Number": 9,
+    "Title": "Invation",
+    "Author": "Wolfe, Aaron",
+    "Owned": "false"
+  },
+  {
+    "Number": 10,
+    "Title": "Falling Toward Forever",
+    "Author": "Eklund, Gordon",
+    "Owned": "true"
+  },
+  {
+    "Number": 11,
+    "Title": "Unto the Last Generation",
+    "Author": "Coulson, Juanita",
+    "Owned": "true"
+  },
+  {
+    "Number": 12,
+    "Title": "The King of Eolim",
+    "Author": "Jones, Raymond F.",
+    "Owned": "false"
+  },
+  {
+    "Number": 13,
+    "Title": "Blake\u0027s Progress",
+    "Author": "Nelson, Ray",
+    "Owned": "false"
+  },
+  {
+    "Number": 14,
+    "Title": "Birthright",
+    "Author": "Sky, Kathleen",
+    "Owned": "true"
+  },
+  {
+    "Number": 15,
+    "Title": "The Star Web",
+    "Author": "Zebrowski, George",
+    "Owned": "true"
+  },
+  {
+    "Number": 16,
+    "Title": "Kane\u0027s Odyssey",
+    "Author": "Clinton, Jeff",
+    "Owned": "true"
+  },
+  {
+    "Number": 17,
+    "Title": "The Black Roads",
+    "Author": "Hensley, J.L.",
+    "Owned": "false"
+  },
+  {
+    "Number": 18,
+    "Title": "Legacy",
+    "Author": "Bone, J.F.",
+    "Owned": "false"
+  },
+  {
+    "Number": 19,
+    "Title": "The Unknown Shore",
+    "Author": "Malcolm, Donald",
+    "Owned": "false"
+  },
+  {
+    "Number": 20,
+    "Title": "Space Trap",
+    "Author": "Coulson, Juanita",
+    "Owned": "false"
+  },
+  {
+    "Number": 21,
+    "Title": "A Law for the Stars",
+    "Author": "Morressy, John",
+    "Owned": "true"
+  },
+  {
+    "Number": 22,
+    "Title": "Keeper",
+    "Author": "Hunter Holly, Joan",
+    "Owned": "true"
+  },
+  {
+    "Number": 23,
+    "Title": "Birth of Fire",
+    "Author": "Pournelle, Jerry",
+    "Owned": "true"
+  },
+  {
+    "Number": 24,
+    "Title": "Ruler of the World",
+    "Author": "McIntosh, J.T.",
+    "Owned": "true"
+  },
+  {
+    "Number": 25,
+    "Title": "Scavenger Hunt",
+    "Author": "Goldin, Stephen",
+    "Owned": "false"
+  },
+  {
+    "Number": 26,
+    "Title": "To Renew the Ages",
+    "Author": "Coulson, Robert",
+    "Owned": "true"
+  },
+  {
+    "Number": 27,
+    "Title": "The Horde",
+    "Author": "Green, Joseph",
+    "Owned": "true"
+  },
+  {
+    "Number": 28,
+    "Title": "The Skies Discrowned",
+    "Author": "Powers, Timothy",
+    "Owned": "false"
+  },
+  {
+    "Number": 29,
+    "Title": "The Iron Rain",
+    "Author": "Malcolm, Donald",
+    "Owned": "false"
+  },
+  {
+    "Number": 30,
+    "Title": "The Seeker",
+    "Author": "Bischoff, David",
+    "Owned": "false"
+  },
+  {
+    "Number": 31,
+    "Title": "Galactic Invaders",
+    "Author": "Berry, James R.",
+    "Owned": "true"
+  },
+  {
+    "Number": 32,
+    "Title": "The Beggars Could Ride",
+    "Author": "Nelson, Ray",
+    "Owned": "false"
+  },
+  {
+    "Number": 33,
+    "Title": "The Dreamfields",
+    "Author": "Jeter, K.W.",
+    "Owned": "false"
+  },
+  {
+    "Number": 34,
+    "Title": "Seas of Ernathe",
+    "Author": "Carver, Jeffrey",
+    "Owned": "true"
+  },
+  {
+    "Number": 35,
+    "Title": "I, Aleppo",
+    "Author": "Sohl, Jerry",
+    "Owned": "true"
+  },
+  {
+    "Number": 36,
+    "Title": "Jeremy Case",
+    "Author": "DeWeese, Gene",
+    "Owned": "false"
+  },
+  {
+    "Number": 37,
+    "Title": "The Meddlers",
+    "Author": "Bone, J.F.",
+    "Owned": "false"
+  },
+  {
+    "Number": 38,
+    "Title": "Ice Prison",
+    "Author": "Sky, Kathleen",
+    "Owned": "true"
+  },
+  {
+    "Number": 39,
+    "Title": "Brandyjack",
+    "Author": "Funnell, Augustine",
+    "Owned": "false"
+  },
+  {
+    "Number": 40,
+    "Title": "Master of the Stars",
+    "Author": "Hiskins, Robert",
+    "Owned": "true"
+  },
+  {
+    "Number": 41,
+    "Title": "Future Sanctuary",
+    "Author": "Harding, Lee",
+    "Owned": "true"
+  },
+  {
+    "Number": 42,
+    "Title": "Cross of the Empire",
+    "Author": "Lampton, Christopher",
+    "Owned": "true"
+  },
+  {
+    "Number": 43,
+    "Title": "Spawn",
+    "Author": "Glut, Donald",
+    "Owned": "true"
+  },
+  {
+    "Number": 44,
+    "Title": "But What of Earth?",
+    "Author": "Anthony, Piers",
+    "Owned": "true"
+  },
+  {
+    "Number": 45,
+    "Title": "Finish Line",
+    "Author": "Goldin, Stephen",
+    "Owned": "false"
+  },
+  {
+    "Number": 46,
+    "Title": "Dance of the Apocalypse",
+    "Author": "Eklund, Gordon",
+    "Owned": "true"
+  },
+  {
+    "Number": 47,
+    "Title": "Epitaph in Rust",
+    "Author": "Powers, Timothy",
+    "Owned": "false"
+  },
+  {
+    "Number": 48,
+    "Title": "Rebels of Merka",
+    "Author": "Funnell, Augustine",
+    "Owned": "true"
+  },
+  {
+    "Number": 49,
+    "Title": "Tiger in the Stars",
+    "Author": "Hughes, Zach",
+    "Owned": "false"
+  },
+  {
+    "Number": 50,
+    "Title": "West of Honor",
+    "Author": "Pournelle, Jerry",
+    "Owned": "false"
+  },
+  {
+    "Number": 51,
+    "Title": "Mindwipe!",
+    "Author": "Hahn, Steve",
+    "Owned": "true"
+  },
+  {
+    "Number": 52,
+    "Title": "The Extraterritorial",
+    "Author": "Morressy, John",
+    "Owned": "true"
+  },
+  {
+    "Number": 53,
+    "Title": "The Ecolog",
+    "Author": "Nelson, Ray",
+    "Owned": "true"
+  },
+  {
+    "Number": 54,
+    "Title": "The River and the Dream",
+    "Author": "Jones, Raymond F.",
+    "Owned": "true"
+  },
+  {
+    "Number": 55,
+    "Title": "Shepherd",
+    "Author": "Hunter Holly, Joan",
+    "Owned": "false"
+  },
+  {
+    "Number": 56,
+    "Title": "Give of the Manti",
+    "Author": "Bone, J.F.",
+    "Owned": "false"
+  },
+  {
+    "Number": 57,
+    "Title": "Shadow of the Stars",
+    "Author": "Marcus Jr, Robert B.",
+    "Owned": "false"
+  }
+]

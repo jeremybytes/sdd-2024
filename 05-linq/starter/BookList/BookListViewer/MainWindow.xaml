@@ -1,0 +1,119 @@
+﻿<Window x:Class="BookListViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookListViewer"
+        mc:Ignorable="d"
+        Title="Book List Viewer" Height="700" Width="1300"
+        WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Border x:Name="LayoutRoot" Padding="5"
+            BorderBrush="{StaticResource ApplicationForeground}" BorderThickness="2" 
+            Background="{StaticResource ApplicationBackground}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300px" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Grouping Panel -->
+            <StackPanel x:Name="GroupPanel" Orientation="Horizontal" Grid.Column="1" Grid.Row="0"
+                        Margin="20,0">
+                <TextBlock Margin="5,0">Grouping:</TextBlock>
+                <ComboBox x:Name="Grouping" 
+                          ItemsSource="{Binding GroupList, Mode=OneTime}"
+                          SelectedValue="{Binding Grouping}"
+                          SelectedValuePath="Key"
+                          DisplayMemberPath="Value" />
+            </StackPanel>
+
+            <!-- Data Sort Panel -->
+            <StackPanel x:Name="SortPanel" Orientation="Horizontal" Grid.Column="2" Grid.Row="0"
+                        Margin="10,0">
+                <TextBlock Margin="5,0">Sorting:</TextBlock>
+                <ComboBox x:Name="PrimarySort" 
+                          ItemsSource="{Binding SortList, Mode=OneTime}"
+                          SelectedValue="{Binding PrimarySort}"
+                          SelectedValuePath="Key"
+                          DisplayMemberPath="Value" />
+                <ComboBox x:Name="SecondarySort" 
+                          ItemsSource="{Binding SortList, Mode=OneTime}"
+                          SelectedValue="{Binding SecondarySort}"
+                          SelectedValuePath="Key"
+                          DisplayMemberPath="Value" />
+                <ComboBox x:Name="TertiarySort" 
+                          ItemsSource="{Binding SortList, Mode=OneTime}"
+                          SelectedValue="{Binding TertiarySort}"
+                          SelectedValuePath="Key"
+                          DisplayMemberPath="Value" />
+            </StackPanel>
+
+            <Button x:Name="ResetListButton" Grid.Column="0" Grid.Row="1" Margin="5"
+                            Content="Reset Filters / Sorting"
+                            Click="ResetListButton_Click"
+                            Style="{StaticResource GoButtonStyle}"/>
+
+            <!-- Filter Panel -->
+            <StackPanel Orientation="Vertical"
+                        Grid.Column="0" Grid.Row="2" Margin="5">
+                <!-- Search Box -->
+                <TextBlock>Filter:</TextBlock>
+                <TextBox x:Name="SearchBox" 
+                     Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" />
+
+                <!-- Decade Filter -->
+                <CheckBox x:Name="Decade1970sCheckbox" VerticalContentAlignment="Center"
+                          Margin="0, 20, 0, 0"
+                          Content="1970s Only"
+                          IsChecked="{Binding LimitTo1970s}"/>
+
+                <!-- Read / Unread -->
+                <GroupBox Margin="0, 20, 0, 0">
+                    <StackPanel>
+                        <CheckBox x:Name="ReadCheckbox" VerticalContentAlignment="Center"
+                          Margin="0, 10, 0, 0"
+                          Content="Read"
+                          IsChecked="{Binding Read}"/>
+                        <CheckBox x:Name="UnreadCheckbox" VerticalContentAlignment="Center"
+                          Margin="0, 10, 0, 0"
+                          Content="Unread"
+                          IsChecked="{Binding Unread}"/>
+                    </StackPanel>
+                </GroupBox>
+
+            </StackPanel>
+            <!-- List Box -->
+            <ListBox x:Name="PersonListBox"
+                     Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="6"
+                     Margin="5"
+                     BorderBrush="DarkSlateGray" BorderThickness="1"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     ItemTemplate="{Binding ListTemplate, Converter={StaticResource myDataTemplateConverter}}"
+                     ItemsSource="{Binding DisplayBooks}">
+            </ListBox>
+
+            <!-- Book Count -->
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="5">
+                <TextBlock Margin="5,0"
+                       Style="{StaticResource ApplicationText}"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Text="Book Count: "/>
+                <TextBlock x:Name="BookCountTextBlock" 
+                       Style="{StaticResource ApplicationText}"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"
+                       Text="{Binding BookCount}"/>
+
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>

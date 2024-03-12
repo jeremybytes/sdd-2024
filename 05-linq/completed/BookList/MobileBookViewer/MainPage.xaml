@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileBookViewer.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Jeremy's Books"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <SearchBar x:Name="searchBar"
+                       Placeholder="Search Books"
+                       SearchCommand="{Binding PerformSearch}"
+                       SearchCommandParameter="{Binding Text, Source={x:Reference searchBar}}"
+                       TextChanged="SearchBar_TextChanged"/>
+
+            <ListView ItemsSource="{Binding Books}"
+                      ItemSelected="ListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Author}"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding Title}"
+                                       Margin="10, 0, 0, 0"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="LaserButton" Text="Laser Books" 
+                    Clicked="LaserButton_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

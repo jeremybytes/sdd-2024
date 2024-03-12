@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)RuleInput&quot; /Y" />
+	</Target>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\OrderTaker.SharedObjects\OrderTaker.SharedObjects.csproj" />
+	</ItemGroup>
+
+</Project>

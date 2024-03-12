@@ -1,0 +1,63 @@
+﻿<Window x:Class="OrderTaker.ErrorDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderTaker"
+        mc:Ignorable="d"
+        Title="Error Details" Height="500" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Border x:Name="LayoutRoot" Padding="5"
+            BorderBrush="{StaticResource ApplicationForeground}" BorderThickness="2" 
+            Background="{StaticResource ApplicationBackground}">
+        <ListBox x:Name="ErrorDetailsListBox" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black"
+                Background="DarkRed"
+                    BorderThickness="1" Width="450" Margin="3" 
+                    Padding="10,5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                <TextBlock Text="{Binding BrokenRule.OrderRule.RuleName}" 
+                                   Style="{StaticResource ListItemTextStyle}" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal"
+                                        HorizontalAlignment="Right">
+                                <TextBlock Text="Type: "
+                                           Style="{StaticResource ListTextStyle}"
+                                           VerticalAlignment="Center" />
+                                <TextBlock Text="{Binding TypeName}"
+                                           Style="{StaticResource ListTextStyle}"
+                                           FontWeight="Bold"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal"
+                                        HorizontalAlignment="Right">
+                                <TextBlock Text="Assembly: "
+                                           Style="{StaticResource ListTextStyle}"
+                                           VerticalAlignment="Center"/>
+                                <TextBlock Text="{Binding AssemblyName}"
+                                           Style="{StaticResource ListTextStyle}"
+                                           FontWeight="Bold"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="3" HorizontalAlignment="Left">
+                                <TextBlock Text="{Binding BrokenRule.Message}" TextWrapping="Wrap"
+                                           Style="{StaticResource ListTextStyle}"
+                                           FontSize="12"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Border>
+</Window>

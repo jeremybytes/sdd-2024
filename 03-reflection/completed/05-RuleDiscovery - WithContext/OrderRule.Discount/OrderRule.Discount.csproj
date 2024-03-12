@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="OrderRules.Interface">
+			<HintPath>..\RuleInput\OrderRules.Interface.dll</HintPath>
+		</Reference>
+		<Reference Include="OrderTaker.SharedObjects">
+			<HintPath>..\RuleInput\OrderTaker.SharedObjects.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)RuleOutput&quot; /Y" />
+	</Target>
+
+</Project>
