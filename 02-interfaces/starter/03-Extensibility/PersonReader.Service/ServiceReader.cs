@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace PersonReader.Service;
 
-public class ServiceReader : IPersonReader
+public class ServiceReader
 {
     HttpClient client = new HttpClient();
     JsonSerializerOptions options = new() { PropertyNameCaseInsensitive = true };

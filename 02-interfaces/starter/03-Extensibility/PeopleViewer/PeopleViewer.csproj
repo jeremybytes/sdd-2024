@@ -9,10 +9,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\PersonReader.CSV\PersonReader.CSV.csproj" />
 		<ProjectReference Include="..\PersonReader.Interface\PersonReader.Interface.csproj" />
 		<ProjectReference Include="..\PersonReader.Service\PersonReader.Service.csproj" />
-		<ProjectReference Include="..\PersonReader.SQL\PersonReader.SQL.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -25,13 +23,10 @@
 
 	<Target Name="CopyDataFiles" AfterTargets="Build">
 		<ItemGroup>
-			<DataFiles Include="$(ProjectDir)..\AdditionalFiles\*.*"/>
+			<DataFiles Include="$(ProjectDir)..\AdditionalFiles\*.*" />
 		</ItemGroup>
 
-		<Copy
-		  SourceFiles="@(DataFiles)"
-		  DestinationFolder="$(TargetDir)\"
-		  SkipUnchangedFiles="true" />
+		<Copy SourceFiles="@(DataFiles)" DestinationFolder="$(TargetDir)\" SkipUnchangedFiles="true" />
 	</Target>
 
 	<!---->
