@@ -89,7 +89,7 @@ public partial class MainWindow : Window
         {
             for (int i = 0; i < iterations; i++)
             {
-                // TODO: Invode Delegate
+                // TODO: Invoke Delegate
             }
         });
 
