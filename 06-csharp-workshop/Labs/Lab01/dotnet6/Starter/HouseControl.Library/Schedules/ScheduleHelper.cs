@@ -11,6 +11,13 @@ public class ScheduleHelper
         this.SunsetProvider = sunsetProvider;
     }
 
+    public static DateTimeOffset Tomorrow()
+    {
+        return new DateTimeOffset(
+            DateTimeOffset.Now.Date.AddDays(1),
+            DateTimeOffset.Now.Offset);
+    }
+
     public static bool IsInFuture(DateTimeOffset checkTime)
     {
         return checkTime > DateTimeOffset.Now;
@@ -21,12 +28,12 @@ public class ScheduleHelper
         if (IsInFuture(info.EventTime))
             return info.EventTime;
 
-        var nextDay = DateTimeOffset.Now.Date.AddDays(1);
+        var nextDay = Tomorrow();
         return info.TimeType switch
         {
             ScheduleTimeType.Standard => nextDay + info.EventTime.TimeOfDay + info.RelativeOffset,
-            ScheduleTimeType.Sunset => SunsetProvider.GetSunset(nextDay) + info.RelativeOffset,
-            ScheduleTimeType.Sunrise => SunsetProvider.GetSunrise(nextDay) + info.RelativeOffset,
+            ScheduleTimeType.Sunset => SunsetProvider.GetSunset(nextDay.Date) + info.RelativeOffset,
+            ScheduleTimeType.Sunrise => SunsetProvider.GetSunrise(nextDay.Date) + info.RelativeOffset,
             _ => info.EventTime
         };
     }
@@ -36,7 +43,7 @@ public class ScheduleHelper
         if (IsInFuture(info.EventTime))
             return info.EventTime;
 
-        var nextDay = DateTimeOffset.Now.Date + TimeSpan.FromDays(1);
+        var nextDay = Tomorrow();
         while (nextDay.DayOfWeek == DayOfWeek.Saturday
             || nextDay.DayOfWeek == DayOfWeek.Sunday)
         {
@@ -46,8 +53,8 @@ public class ScheduleHelper
         return info.TimeType switch
         {
             ScheduleTimeType.Standard => nextDay + info.EventTime.TimeOfDay + info.RelativeOffset,
-            ScheduleTimeType.Sunset => SunsetProvider.GetSunset(nextDay) + info.RelativeOffset,
-            ScheduleTimeType.Sunrise => SunsetProvider.GetSunrise(nextDay) + info.RelativeOffset,
+            ScheduleTimeType.Sunset => SunsetProvider.GetSunset(nextDay.Date) + info.RelativeOffset,
+            ScheduleTimeType.Sunrise => SunsetProvider.GetSunrise(nextDay.Date) + info.RelativeOffset,
             _ => info.EventTime
         };
     }
@@ -57,7 +64,7 @@ public class ScheduleHelper
         if (IsInFuture(info.EventTime))
             return info.EventTime;
 
-        var nextDay = DateTimeOffset.Now.Date.AddDays(1);
+        var nextDay = Tomorrow();
         while (nextDay.DayOfWeek != DayOfWeek.Saturday
             && nextDay.DayOfWeek != DayOfWeek.Sunday)
         {
@@ -66,8 +73,8 @@ public class ScheduleHelper
         return info.TimeType switch
         {
             ScheduleTimeType.Standard => nextDay + info.EventTime.TimeOfDay + info.RelativeOffset,
-            ScheduleTimeType.Sunset => SunsetProvider.GetSunset(nextDay) + info.RelativeOffset,
-            ScheduleTimeType.Sunrise => SunsetProvider.GetSunrise(nextDay) + info.RelativeOffset,
+            ScheduleTimeType.Sunset => SunsetProvider.GetSunset(nextDay.Date) + info.RelativeOffset,
+            ScheduleTimeType.Sunrise => SunsetProvider.GetSunrise(nextDay.Date) + info.RelativeOffset,
             _ => info.EventTime
         };
     }
