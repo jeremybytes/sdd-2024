@@ -25,7 +25,25 @@ Basic understanding of C# and object-oriented programming (classes, inheritance,
 
 > Note: Due to the layout of the rooms, we will not have dedicated time for lab work. Feel free to bring your laptop to follow along with slides and code samples. The Lab files are available for you to reinforce the learning once you get back home.
 
-## Hands-On Labs  
+## Hands-on Lab Requirements:
+
+* Interactive labs can be completed using Windows, macOS, and Linux (anywhere .NET 6/8 will run).
+
+* You need to have the .NET 6 SDK or .NET 8 SDK installed as well as the code editor of your choice (Visual Studio 2022 Community Edition or Visual Studio Code are both good (free) choices).
+
+### Links:
+
+* .NET 8.0 SDK
+[https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/en-us/download)
+
+* Visual Studio 2022 (Community)
+[https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
+Note: Install the "ASP.NET and web development" workload for the labs and samples. Include ".NET desktop development" for "digit-display" sample and WPF-based samples.
+
+* Visual Studio Code
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+## Hands-on Labs
 
 The "Labs" folder contains the hands-on labs. As noted above, this workshop will not have dedicated lab time, but each lab has a step-by-step walkthrough if you want to try things out yourself.  
 
@@ -50,8 +68,68 @@ In addition, each lab builds on the previous. So the "Completed" of Lab 01 is th
 
 ## Resources  
 
-Other Sessions
+**Other Sessions**
 * [IEnumerable, ISaveable, IDontGetIt: Understanding C# Interfaces](../02-interfaces/)  
 * [DI Why? Getting a Grip on Dependency Injection](../04-dependency-injection/)  
+
+
+**Abstraction / Implementation**  
+* Article: [Drawbacks to Abstraction](http://jeremybytes.blogspot.com/2012/11/drawbacks-to-abstraction.html)  
+* Article: [Abstraction: The Goldilocks Principle](http://jeremybytes.blogspot.com/2012/10/abstraction-goldilocks-principle.html)  
+* Article: [Explicit Interface Implementation](http://jeremybytes.blogspot.com/2012/03/explicit-interface-implementation.html)  
+* Article: [Updating an Interface Implementation](http://jeremybytes.blogspot.com/2012/03/updating-interface-implementation.html)  
+
+**Dynamic Loading**    
+* Article: [Dyamically Loading .NET Standard Assemblies in .NET Core](https://jeremybytes.blogspot.com/2020/01/using-typegettype-with-net-core.html)  
+* Article: [Dynamically Loading Types in .NET Core with a Custom Assembly Load Context](https://jeremybytes.blogspot.com/2020/01/dynamically-loading-types-in-net-core.html)  
+
+**Framework / Language Changes**  
+* Topic: [Catching Up with Interfaces: What You Know May Be Wrong](http://www.jeremybytes.com/Demos.aspx#CSharp8Interfaces)  
+* Article: [A Closer Look at C# 8 Interfaces](https://jeremybytes.blogspot.com/2019/09/a-closer-look-at-c-8-interfaces.html)  
+* Article: [Properties and Default Implementation](https://jeremybytes.blogspot.com/2019/09/c-8-interfaces-properties-and-default.html)  
+* Article: [Dangerous Assumptions in Default Implementation](https://jeremybytes.blogspot.com/2019/09/c-8-interfaces-dangerous-assumptions-in.html)  
+* Article: ["dynamic" and Default Implementation](https://jeremybytes.blogspot.com/2019/09/c-8-interfaces-dynamic-and-default.html)  
+* Article: [Unit Testing Default Implementation](https://jeremybytes.blogspot.com/2019/09/c-8-interfaces-unit-testing-default.html)  
+* Article: [Public, Private, and Protected Members](https://jeremybytes.blogspot.com/2019/11/c-8-interfaces-public-private-and.html)  
+* Article: [Static Members](https://jeremybytes.blogspot.com/2019/12/c-8-interfaces-static-members.html)  
+* Article: [Static Main -- Why Not?](https://jeremybytes.blogspot.com/2019/12/c-8-interfaces-static-main-why-not.html)  
+
+**Dependency Injection Patterns**  
+* [Dependency Injection: The Property Injection Pattern](http://jeremybytes.blogspot.com/2014/01/dependency-injection-property-injection.html)  
+* [Property Injection: Simple vs. Safe](http://jeremybytes.blogspot.com/2015/06/property-injection-simple-vs-safe.html)  
+* [Dependency Injection: The Service Locator Pattern](http://jeremybytes.blogspot.com/2013/04/dependency-injection-service-locator.html)  
+
+**Decorators and Async Interfaces**
+* [Async Interfaces, Decorators, and .NET Standard](https://jeremybytes.blogspot.com/2019/01/more-di-async-interfaces-decorators-and.html)  
+* [Async Interfaces](https://jeremybytes.blogspot.com/2019/01/more-di-async-interfaces.html)  
+* [Adding Retry with the Decorator Pattern](https://jeremybytes.blogspot.com/2019/01/more-di-adding-retry-with-decorator.html)  
+* [Unit Testing Async Methods](https://jeremybytes.blogspot.com/2019/01/more-di-unit-testing-async-methods.html)  
+* [Adding Exception Logging with the Decorator Pattern](https://jeremybytes.blogspot.com/2019/01/more-di-adding-exception-logging-with.html)  
+* [Adding a Client-Side Cache with the Decorator Pattern](https://jeremybytes.blogspot.com/2019/01/more-di-adding-client-side-cache-with.html)  
+* [The Real Power of Decorators -- Stacking Functionality](https://jeremybytes.blogspot.com/2019/01/more-di-real-power-of-decorators.html)  
+
+**Working with Statics (DateTime.Now)**  
+* [Mocking Current Time with a Simple Time Provider](https://jeremybytes.blogspot.com/2015/01/mocking-current-time-with-time-provider.html)  
+
+**Delegates**
+* [C# Delegates](http://www.jeremybytes.com/Downloads/GetFuncyWithDelegates.pdf) - PDF Walkthrough of the code samples.  
+Note: This is a bit old, but the code is all still valid.
+* [Exceptions in Multicast Delegates](http://jeremybytes.blogspot.com/2011/11/exceptions-in-multi-cast-delegates.html)  
+* [More Delegate Exception Handling](http://jeremybytes.blogspot.com/2013/03/more-delegate-exception-handling.html)  
+* [Recognizing Higher-Order Functions in C#](http://jeremybytes.blogspot.com/2014/06/recognizing-higher-order-function-in-c.html)  
+* [Named Delegates Compared to Anonymous Delegates](http://jeremybytes.blogspot.com/2015/03/named-delegates-compared-to-anonymous.html)  
+
+**Unit Testing**
+* Book Review (Highly Recommended): [The Art of Unit Testing - Roy Osherove](http://jeremybytes.blogspot.com/2015/06/book-review-art-of-unit-testing-with.html)  
+* Book Review: [Working Effectively with Legacy Code - Michael C. Feathers](http://jeremybytes.blogspot.com/2013/02/book-review-working-effectively-with.html)  
+* Book Review: [Test-Driven Development by Example - Kent Beck](http://jeremybytes.blogspot.com/2013/03/book-review-test-driven-development-by.html)  
+* Article Series (TDD & NUnit): [Coding Practice with Conway's Game of Life](http://www.jeremybytes.com/Downloads.aspx#ConwayTDD)  
+* Video Series (Intro to TDD): [Unit Testing & TDD](https://www.youtube.com/watch?v=l4xhTq4qmC0&list=PLdbkZkVDyKZXqPu-xDFkzuP66QijGeewz)  
+
+**Testing Practices**  
+* Code Coverage: [What Parts of Your Application Do Your Users *Not* Care About?](http://jeremybytes.blogspot.com/2015/02/unit-test-coverage-what-parts-of-your.html)  
+* What to Test: [My Approach to Testing: Test Public Members](http://jeremybytes.blogspot.com/2015/04/my-approach-to-testing-test-public.html)  
+* Setup Methods: [Unit Testing: Setup Methods or Not?](http://jeremybytes.blogspot.com/2015/06/unit-testing-setup-methods-or-not.html)  
+* Assert Messages: [Unit Testing Asserts: Skip the Message Parameter](http://jeremybytes.blogspot.com/2015/07/unit-testing-asserts-skip-message.html)  
 
 ---
