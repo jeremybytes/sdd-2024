@@ -23,9 +23,9 @@ Pre-Requisites:
 
 Basic understanding of C# and object-oriented programming (classes, inheritance, methods, and properties). No prior experience with the primary topics is necessary; we’ll take care of that as we go.  
 
-> Note: Due to the layout of the rooms, we will not have dedicated time for lab work. Feel free to bring your laptop to follow along with slides and code samples. The Lab files are available for you to reinforce the learning once you get back home.
-
 ## Hands-on Lab Requirements:
+
+> Note: Due to the layout of the rooms, we will not have dedicated time for lab work. Feel free to bring your laptop to follow along with slides and code samples. The Lab files are available for you to reinforce the learning once you get back home.
 
 * Interactive labs can be completed using Windows, macOS, and Linux (anywhere .NET 6/8 will run).
 
