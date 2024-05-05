@@ -25,23 +25,30 @@ Basic understanding of C# and object-oriented programming (classes, inheritance,
 
 ## Hands-on Lab Requirements:
 
-> Note: Due to the layout of the rooms, we will not have dedicated time for lab work. Feel free to bring your laptop to follow along with slides and code samples. The Lab files are available for you to reinforce the learning once you get back home.
+* You must provide your own laptop computer for the hands-on lab portions of the day.
 
-* Interactive labs can be completed using Windows, macOS, and Linux (anywhere .NET 6/8 will run).
+* Interactive labs can be completed using Windows, macOS, or Linux -- anywhere .NET 6/8 will run.
 
-* You need to have the .NET 6 SDK or .NET 8 SDK installed as well as the code editor of your choice (Visual Studio 2022 Community Edition or Visual Studio Code are both good (free) choices).
+* You need to have the .NET 6 SDK or .NET 8 SDK installed as well as the code editor of your choice (Visual Studio 2022 Community Edition or Visual Studio Code are both good (free) choices).  
+
+* You will also need the lab files with the code and instructions. These can be obtained from this repository (in the Labs folder) or from the separate "Labs Only" repository noted below.
 
 ### Links:
 
-* .NET 8.0 SDK
+* .NET 8.0 SDK  
 [https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/en-us/download)
 
-* Visual Studio 2022 (Community)
-[https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
+* Visual Studio 2022 (Community)  
+[https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)  
 Note: Install the "ASP.NET and web development" workload for the labs and samples. Include ".NET desktop development" for "digit-display" sample and WPF-based samples.
 
-* Visual Studio Code
-[https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+* Visual Studio Code  
+[https://code.visualstudio.com/download](https://code.visualstudio.com/download)  
+
+* Labs Only repository  
+[https://github.com/jeremybytes/sdd-2024-workshop-labs-only](https://github.com/jeremybytes/sdd-2024-workshop-labs-only)  
+A repository with just the lab files for this workshop, so you do not need to download this entire repository.  
+
 
 ## Hands-on Labs
 
