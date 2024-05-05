@@ -75,6 +75,10 @@ In addition, each lab builds on the previous. So the "Completed" of Lab 01 is th
 
 ## Resources  
 
+**Slides and Code Samples**  
+* [Workshop Slides](./SLIDES-csharp-workshop.pdf)  
+* [Code Samples](./DemoApps/)
+
 **Other Sessions**
 * [IEnumerable, ISaveable, IDontGetIt: Understanding C# Interfaces](../02-interfaces/)  
 * [DI Why? Getting a Grip on Dependency Injection](../04-dependency-injection/)  
