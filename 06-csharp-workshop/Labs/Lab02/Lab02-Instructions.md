@@ -64,7 +64,7 @@ TimeZoneInfo.Local.GetUtcOffset(DateTimeOffset.Now())
 ~~~
 * It may be helpful to use a mocking framework (such as Moq) to create an object to represent the current "fake" time.  
 
-* **To create a `ScheduleInfo` object for testing, only the `EventTime` (`DateTimeOffset`) and `TimeType` (`ScheduleTimeType`) are required. Default values can be used for the other properties.**  
+* To create a `ScheduleInfo` object for testing, only the `EventTime` (`DateTimeOffset`) and `TimeType` (`ScheduleTimeType`) are required. Default values can be used for the other properties.  
 
 * It may be a good idea to have a "TearDown" step that sets the time provider back to its default value. (This is one of the fun things when dealing with statics in tests.)  
 
@@ -358,7 +358,7 @@ var schedule = new Schedule(fileName, new FakeSunsetProvider());
 
 ~~~csharp
 // Assert
-Assert.That(schedule.Count(), Is.GreaterThan(0));
+Assert.That(schedule.Count, Is.GreaterThan(0));
 ~~~
 
 > NUnit asserts uses an `Assert.That` syntax. The first parameter is the thing that you are checking (the count of items in the schedule). The second parameter is the condition (greater than 0). There are a number of helper items in NUnit (like `Is`) that is used here. `Is.EqualTo(expectedValue)` is a common condition, but there is quite a bit of flexibility.  
@@ -373,7 +373,7 @@ public void ScheduleItems_OnCreation_IsPopulated()
     var schedule = new Schedule(fileName, new FakeSunsetProvider());
 
     // Assert
-    Assert.That(schedule.Count(), Is.GreaterThan(0));
+    Assert.That(schedule.Count, Is.GreaterThan(0));
 }
 ~~~
 
@@ -915,7 +915,7 @@ public void SundayItemInPastAndTodayThursday_OnRollWeekendDay_IsSaturday()
 
     ScheduleInfo info = new()
     {
-        EventTime = saturday,
+        EventTime = sunday,
         TimeType = ScheduleTimeType.Standard,
     };
 

@@ -10,22 +10,14 @@ public class LifeRules
                 nameof(liveNeighbors), 
                 "liveNeighbors must be between 0 and 8");
 
-        return currentState switch
+        return (currentState, liveNeighbors) switch
         {
-            CellState.Alive =>
-                liveNeighbors switch
-                {
-                    2 => CellState.Alive,
-                    3 => CellState.Alive,
-                    _ => CellState.Dead,
-                },
-            CellState.Dead =>
-                liveNeighbors switch
-                {
-                    3 => CellState.Alive,
-                    _ => CellState.Dead,
-                },
-            _ => throw new ArgumentOutOfRangeException(nameof(currentState)),
+            (CellState.Alive, 2) => CellState.Alive,
+            (CellState.Alive, 3) => CellState.Alive,
+            (CellState.Alive, _) => CellState.Dead,
+            (CellState.Dead, 3) => CellState.Alive,
+            (CellState.Dead, _) => CellState.Dead,
+            (_, _) => throw new ArgumentOutOfRangeException(nameof(currentState)),
         };
     }
 }

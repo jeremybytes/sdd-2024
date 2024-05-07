@@ -4,9 +4,9 @@ namespace HouseControl.Library;
 
 public class ScheduleHelper
 {
-    private readonly SolarServiceSunsetProvider SunsetProvider;
+    private readonly ISunsetProvider SunsetProvider;
 
-    public ScheduleHelper(SolarServiceSunsetProvider sunsetProvider)
+    public ScheduleHelper(ISunsetProvider sunsetProvider)
     {
         this.SunsetProvider = sunsetProvider;
     }
